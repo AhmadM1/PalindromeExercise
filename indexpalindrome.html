@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> example for palindrome </h1>
+<p>My First Paragraph.</p>
+
+<script>
+    function ispalindrome(str) {
+    if (str.length === 0) { return true; }
+    if (str[0] !== str[str.length - 1]) { return false; }
+    return ispalindrome(str.slice(1, str.length - 1));
+}
+
+console.log(ispalindrome("hannah"));
+console.log(ispalindrome("level"));
+console.log(ispalindrome("car"));
+    
+document.write("level is ");    
+document.write(ispalindrome("level"));
+    
+document.write(" , "); 
+    
+document.write("build is ");    
+document.write(ispalindrome("build"));
+        
+</script>
+
+</body>
+</html> 
